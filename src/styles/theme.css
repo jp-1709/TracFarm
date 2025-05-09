@@ -1,0 +1,124 @@
+/* Global Theme Variables - Premium Google UI/UX Redesign */
+:root[data-theme="light"] {
+  /* Background Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f6f8fa; /* Soft off-white */
+  --bg-card: rgba(255, 255, 255, 0.85); /* Glassmorphic backdrop */
+  --bg-light: #f1f5f9;
+  --bg-white: #ffffff;
+  --bg-gray: #e2e8f0;
+  --bg-gradient: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 50%, #a5d6a7 100%); /* Lush organic gradient */
+
+  /* Text Colors */
+  --text-primary: #1a202c; /* Clean dark gray */
+  --text-secondary: #4a5568;
+  --text-heading: #0f172a;
+  --text-muted: #718096;
+  --text-body: #2d3748;
+  --text-dark: #1a202c;
+
+  /* Border Colors */
+  --border-color: rgba(226, 232, 240, 0.8);
+  --border-hover: rgba(203, 213, 225, 0.9);
+
+  /* Primary Green (Google Premium Emerald) */
+  --primary-green: #0f9d58; /* Google Green */
+  --primary-green-hover: #0b8043;
+  --primary-green-light: #e8f5e9;
+
+  /* Status Colors */
+  --success: #0f9d58;
+  --error: #db4437; /* Google Red */
+  --info: #4285f4; /* Google Blue */
+  --warning: #f4b400; /* Google Yellow */
+  --accent-green: #e8f5e9;
+
+  /* Shadows - Super soft and premium elevation */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.01);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.03);
+  --shadow-xl: 0 24px 48px rgba(0, 0, 0, 0.08), 0 8px 16px rgba(0, 0, 0, 0.04);
+}
+
+:root[data-theme="dark"] {
+  /* Background Colors */
+  --bg-primary: #080c14; /* Extremely deep, clean space blue */
+  --bg-secondary: #0d131f; /* Smooth slate-black */
+  --bg-card: rgba(17, 24, 39, 0.75); /* Dark Glassmorphic */
+  --bg-light: #161f30;
+  --bg-white: #111827;
+  --bg-gray: #2d3748;
+  --bg-gradient: linear-gradient(135deg, #05080f 0%, #0d131f 50%, #112211 100%); /* Space & Organic hint */
+
+  /* Text Colors */
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-heading: #ffffff;
+  --text-muted: #64748b;
+  --text-body: #94a3b8;
+  --text-dark: #f8fafc;
+
+  /* Border Colors */
+  --border-color: rgba(31, 41, 55, 0.6);
+  --border-hover: rgba(55, 65, 81, 0.8);
+
+  /* Primary Green (Google Premium Emerald) */
+  --primary-green: #34d399; /* Emerald 400 */
+  --primary-green-hover: #10b981; /* Emerald 500 */
+  --primary-green-light: rgba(52, 211, 153, 0.1);
+
+  /* Status Colors */
+  --success: #34d399;
+  --error: #f87171;
+  --info: #60a5fa;
+  --warning: #fbbf24;
+  --accent-green: rgba(52, 211, 153, 0.1);
+
+  /* Shadows - Deeper but soft for dark surfaces */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.45);
+  --shadow-xl: 0 24px 48px rgba(0, 0, 0, 0.55);
+}
+
+/* Common Variables */
+:root {
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+
+  /* Border Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+  --radius-full: 9999px;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+
+  /* Transitions */
+  --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Apply theme to body */
+body {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
