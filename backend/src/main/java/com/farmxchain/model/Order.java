@@ -6,6 +6,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
  * 
  * Single source of truth for all order transactions.
  * Links customer, retailer, and distributor in one place.
@@ -20,9 +21,9 @@ import java.util.List;
  */
 @Entity
 @Table(name = "orders", indexes = {
-    @Index(name = "idx_customer_id", columnList = "customer_id"),
-    @Index(name = "idx_status", columnList = "status"),
-    @Index(name = "idx_created_at", columnList = "created_at")
+        @Index(name = "idx_customer_id", columnList = "customer_id"),
+        @Index(name = "idx_status", columnList = "status"),
+        @Index(name = "idx_created_at", columnList = "created_at")
 })
 public class Order {
 
@@ -94,7 +95,8 @@ public class Order {
     // CONSTRUCTORS
     // ============================================================================
 
-    public Order() {}
+    public Order() {
+    }
 
     public Order(User customer, List<OrderItem> items, BigDecimal totalAmount) {
         this.customer = customer;
@@ -262,4 +264,3 @@ public class Order {
                 '}';
     }
 }
-
