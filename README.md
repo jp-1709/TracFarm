@@ -1,118 +1,103 @@
-# 🌾 TracFarm – AI Driven Agricultural Traceability Network
+# 🌾 TracFarm
+
+A modern full-stack platform for agricultural traceability, quality assurance, and transparent supply chain management.
 
 ![Java](https://img.shields.io/badge/Java-17-orange)
-![Spring Boot](https://img.shields.io/badge/SpringBoot-Framework-brightgreen)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-Framework-brightgreen)
 ![React](https://img.shields.io/badge/React-Frontend-blue)
 ![JWT](https://img.shields.io/badge/JWT-Security-red)
 ![AI](https://img.shields.io/badge/AI-Gemini-purple)
 
 ---
 
-# 📌 Project Overview
+## Overview
 
-**TracFarm** is a full-stack agricultural supply chain platform designed to improve **transparency, traceability, and trust** in the farm-to-consumer ecosystem.
+TracFarm is designed to improve trust, transparency, and accountability across the agricultural value chain. It connects farmers, distributors, retailers, and customers through a digital system that enables product tracking, secure authentication, and AI-assisted quality evaluation.
 
-The platform enables farmers, distributors, retailers, and customers to track agricultural products throughout the supply chain while ensuring secure authentication and reliable product verification.
-
-The system integrates **AI-based product quality analysis**, **secure authentication**, and **role-based dashboards** to provide a modern digital infrastructure for agricultural supply chain management.
+The platform provides a reliable foundation for managing agricultural products from farm to consumer while improving decision-making and operational visibility.
 
 ---
 
+## Key Features
+
+- Role-based dashboards for farmers, distributors, retailers, customers, and administrators
+- Farm and product registration workflows
+- End-to-end product traceability across the supply chain
+- AI-powered quality analysis for agricultural products
+- Secure authentication using JWT
+- QR-based product verification and traceability
+- Responsive and modern user interface
+- Transportation and distribution tracking
+
 ---
 
-# 🚀 Technologies Used
+## Technology Stack
 
-## Backend
+### Backend
 
 - Java
 - Spring Boot
 - Spring Security
 - JWT Authentication
-- REST APIs
+- RESTful APIs
 - Maven
 
-## Frontend
+### Frontend
 
 - React.js
 - JavaScript
 - Tailwind CSS
 - Axios
 
-## Database
+### Database & Services
 
 - MySQL
-
-## AI Integration
-
 - Google Gemini API
-
-## Other Tools
-
-- Cloudinary (Image storage)
-- Git & GitHub (Version control)
+- Cloudinary for image storage
 
 ---
 
-# 🎯 Key Features
+## User Roles
 
-✔ Role-based dashboards for different users
-✔ Farm and product registration
-✔ Supply chain product tracking
-✔ AI-powered agricultural quality analysis
-✔ Secure JWT authentication
-✔ QR-code based product traceability
-✔ Transportation tracking between supply chain stages
-✔ Responsive modern UI
-
----
-
-# 👥 User Roles
-
-The system supports multiple stakeholders in the agricultural ecosystem:
-
-**Farmer**
+### Farmer
 
 - Register farm details
 - Add agricultural products
 - Upload product images
 - Manage product information
 
-**Distributor**
+### Distributor
 
-- Manage product transportation
-- Track shipments between locations
+- Manage transportation activities
+- Track shipment movement between locations
 
-**Retailer**
+### Retailer
 
-- Manage product distribution and availability
+- Manage product availability and distribution
 
-**Customer**
+### Customer
 
-- Scan QR codes
 - View product origin and traceability
+- Scan QR codes for verification
 
-**Admin**
+### Admin
 
-- Monitor system activities
-- Manage platform users
-
----
-
-# 🧠 AI Quality Check
-
-TracFarm integrates an **AI-based quality analysis system**.
-
-Product images can be analyzed using AI services to evaluate agricultural product quality and provide insights about crop conditions.
-
-This helps ensure **better quality assurance in the agricultural supply chain**.
+- Monitor platform activity
+- Manage system users and operations
 
 ---
 
-# 🏗 System Architecture
+## AI Quality Check
 
-The backend follows a layered architecture:
+TracFarm integrates AI-based analysis to evaluate agricultural product quality from uploaded images. This helps support better quality assurance and enables faster, more informed decisions across the supply chain.
 
-```
+---
+
+## System Architecture
+
+The application follows a layered architecture that separates concerns across the user interface, business logic, persistence layer, and external AI services.
+
+```text
 User
  ↓
 React Frontend
@@ -128,40 +113,30 @@ MySQL Database
 AI Service (Gemini API)
 ```
 
-This architecture ensures:
-
-- scalability
-- maintainable code structure
-- clear separation of responsibilities
+This structure promotes scalability, maintainability, and clean separation of responsibilities.
 
 ---
 
-# 📁 Project Structure
+## Project Structure
 
-```
-TracFarm
-│
-├── backend
-│   ├── controller
-│   ├── service
-│   ├── repository
-│   ├── model
-│   ├── security
-│   └── config
-│
-├── src
-│   ├── components
-│   ├── pages
-│   ├── services
-│   ├── context
-│   └── styles
-│
-├── public
-│   ├── images
+```text
+TracFarm/
+├── backend/
+│   ├── controller/
+│   ├── service/
+│   ├── repository/
+│   ├── model/
+│   ├── security/
+│   └── config/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── context/
+│   └── styles/
+├── public/
+│   ├── images/
 │   └── assets
-│
-├── screenshots
-│
 ├── package.json
 ├── pom.xml
 └── README.md
@@ -169,35 +144,32 @@ TracFarm
 
 ---
 
-# ⚙️ Installation & Setup
+## Getting Started
 
-## 1️⃣ Clone the repository
+### 1. Clone the repository
 
-```
+```bash
 git clone https://github.com/jp-1709/TracFarm.git
+cd TracFarm
 ```
 
----
+### 2. Run the backend
 
-## 2️⃣ Backend Setup
-
-```
+```bash
 cd backend
-mvn spring-boot:run
+./mvnw spring-boot:run
 ```
 
----
+### 3. Run the frontend
 
-## 3️⃣ Frontend Setup
-
-```
+```bash
 npm install
 npm start
 ```
 
 ---
 
-# 📊 Application Modules
+## Application Modules
 
 - User Authentication
 - Product Management
@@ -209,43 +181,25 @@ npm start
 
 ---
 
-# 🔐 Security Implementation
+## Security
 
-The system implements modern security mechanisms:
-
-- Spring Security
-- JWT Token Authentication
-- Role Based Access Control
-
-These mechanisms ensure secure communication between the frontend and backend services.
+The platform uses modern security practices including Spring Security and JWT-based authentication to protect user access and secure communication between services.
 
 ---
 
-# 🌍 Real-World Impact
+## Impact
 
-TracFarm aims to address several major challenges in agricultural supply chains:
+TracFarm addresses critical challenges in agricultural supply chains such as:
 
-- Lack of transparency in product origin
-- Difficulty in tracking supply chain stages
-- Quality verification challenges
-- Limited trust between farmers and consumers
-
-The platform introduces a **digital traceability network for agricultural products**.
+- Limited transparency in product origin
+- Difficulty tracking product movement
+- Weak quality verification processes
+- Low trust between farmers and consumers
 
 ---
 
-## 🎥 Project Highlights
+## Author
 
-• AI-powered agricultural quality analysis  
-• End-to-end farm-to-consumer product traceability  
-• Role-based dashboards (Farmer, Distributor, Retailer, Customer, Admin)  
-• Secure authentication using JWT  
-• Full-stack architecture using React + Spring Boot
-
----
-
-# 👨‍💻 Author
-
-**JP's**
+JP's
 
 Automation Testing | Full Stack Development | Java | Spring Boot | React
